@@ -38,4 +38,5 @@ class ApplicationController < Sinatra::Base
     @post = Post.find_by(id: params[:id])
     @post.update(name: params["name"], content: params["content"])
     erb :show
+  end
 end
