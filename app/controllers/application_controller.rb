@@ -12,8 +12,12 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/new' do
+    erb :new 
+  end
+
+  post '/posts' do
     Post.create(name: params["name"], content: params["content"])
-    binding.pry
-    erb :new
+    #binding.pry
+    erb :index
   end
 end
