@@ -1,3 +1,5 @@
 <h2><%= @post.name %></h2>
 <p><%= @post.content %></p>
-<p> "test" </p>
+<form method="POST" action="/posts/<%=posts.id%>/delete">
+  <input type="submit" value="delete">
+</form>
