@@ -20,4 +20,8 @@ class ApplicationController < Sinatra::Base
     #binding.pry
     erb :index
   end
+
+  get '/posts' do
+    erb :index
+  end
 end
